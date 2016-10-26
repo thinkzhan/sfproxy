@@ -10,7 +10,7 @@ program.version(pkg.version)
 	.parse(process.argv);
 
 require('../lib/start').run({
-	rule: program.list,
+	list: program.list,
 	port: program.port,
 	timeout: program.timeout
 });
