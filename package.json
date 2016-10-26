@@ -1,8 +1,8 @@
 {
   "name": "sfproxy",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "bin": {
-    "cm": "./bin/www"
+    "sfproxy": "./bin/www"
   },
   "description": "proxy file or request ,only for http currently",
   "scripts": {
