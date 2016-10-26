@@ -1,0 +1,31 @@
+{
+  "name": "sfproxy",
+  "version": "0.0.4",
+  "bin": {
+    "cm": "./bin/www"
+  },
+  "description": "proxy file or request ,only for http",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "liberalist",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "connect": "^3.5.0",
+    "lodash": "^4.16.4",
+    "sfconsole": "^0.0.5"
+  },
+  "main": "index.js",
+  "keywords": [
+    "proxy",
+    "http",
+    "server"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:liberalist1991/sfcm.git",
+    "web": "https://github.com/liberalist1991/sfcm"
+  }
+}

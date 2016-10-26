@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var pkg = require('../package.json');
+
+program.version(pkg.version)
+	.option('-p, --port <n>', 'port of the proxy server, default 3037', parseInt)
+	.option('-l, --list <n>', 'proxy rule, file or json data')
+	.option('-t, --timeout <n>', 'timeout of the response, default 5000', parseInt)
+	.parse(process.argv);
+
+require('../lib/start').run({
+	rule: program.list,
+	port: program.port,
+	timeout: program.timeout
+});
