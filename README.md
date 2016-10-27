@@ -43,10 +43,13 @@ module.exports = [{
 	 	url: "http://test.js", //代理线上文件，返回本地相对路径文件
 	 	res: './test.js'
 	}, {
-		url: "http://test.js",  //代理线上文件，返回本地绝对路径文件
+		url: "http://\.*.js",  //代理线上文件，返回本地绝对路径文件
 		res: '/Users/Desktop/test.js'
 	}, {
 		url: "http://test.js",  //代理线上文件，返回普通字符串
+		res: 'test'
+	}, {
+		url: /http://\.*.js/,  //正则/正则字符串/普通字符串
 		res: 'test'
 	}
 ]

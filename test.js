@@ -1,4 +1,4 @@
-console.log('test...');
+console.log('test---');
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -25345,11 +25345,11 @@ console.log('test...');
 						newState.res = res;
 						window.uinfo = res.data;
 						if(!res.data.birthDay || res.data.birthDay == '0001-01-01' || res.data.birthDay == '0001-12-01'){
-							newState.res.data.birthDay = 'ä¿å¯†';
+							newState.res.data.birthDay = '淇濆瘑';
 						}
 						if(newState.res.data.mobile == ''){
 							newState.mobilePath = '/mobileChange';
-							newState.res.data.showMobile = 'è¯·ç»‘å®šæ‰‹æœº';
+							newState.res.data.showMobile = '璇风粦瀹氭墜鏈�';
 						}else{
 							newState.res.data.showMobile = newState.res.data.mobile.substr(0, 3) + '****' + newState.res.data.mobile.substr(7);
 						}
@@ -25400,7 +25400,7 @@ console.log('test...');
 			}
 		},
 		_handleUploadImgFailure: function(){
-			alert('å›¾ç‰‡è¿‡å¤§');
+			alert('鍥剧墖杩囧ぇ');
 		},
 		handleShowUpload: function(){
 			var newState = Tools.clone(this.state);
@@ -25470,7 +25470,7 @@ console.log('test...');
 
 		},
 		handleSecret: function(){
-			this.updateUserBirth('0001-01-01', 'ä¿å¯†');
+			this.updateUserBirth('0001-01-01', '淇濆瘑');
 		},
 		updateUserBirth: function(dateStr, showStr){
 			var That = this;
@@ -25485,7 +25485,7 @@ console.log('test...');
 						var newState = Tools.clone(That.state);
 							newState.showBirth = false;
 							newState.showSuc = true;
-							newState.sucText = 'å‡ºç”Ÿæ—¥æœŸä¿®æ”¹æˆåŠŸ';
+							newState.sucText = '鍑虹敓鏃ユ湡淇敼鎴愬姛';
 							newState.res.data.birthDay = showStr;
 							That.setState(newState);
 							setTimeout(function(){
@@ -25512,7 +25512,7 @@ console.log('test...');
 						var newState = Tools.clone(That.state);
 							newState.res.data.gender = gender;
 							newState.showSuc = true;
-							newState.sucText = 'æ€§åˆ«ä¿®æ”¹æˆåŠŸ';
+							newState.sucText = '鎬у埆淇敼鎴愬姛';
 							newState.showGender = false;
 							That.setState(newState);
 							setTimeout(function(){
@@ -25537,7 +25537,7 @@ console.log('test...');
 				 this.state.res.data.userName.match(checkRegOld) != null){
 				var newState = Tools.clone(That.state);
 					newState.showSuc = true;
-					newState.sucText = 'æ‚¨' + this.state.res.data.userName + 'æ˜¯é€šè¿‡æ‰‹æœºå·æ³¨å†Œçš„ï¼Œè´¦å·ä¸Žæ‰‹æœºå·ä¸èƒ½è§£é™¤ç»‘å®šå…³ç³»';
+					newState.sucText = '鎮�' + this.state.res.data.userName + '鏄€氳繃鎵嬫満鍙锋敞鍐岀殑锛岃处鍙蜂笌鎵嬫満鍙蜂笉鑳借В闄ょ粦瀹氬叧绯�';
 					That.setState(newState);
 					setTimeout(function(){
 						newState.showSuc = false;
@@ -25558,36 +25558,36 @@ console.log('test...');
 				{
 					key: 0,
 					link: 'http://m.focus.cn/',
-					text: 'æ–°æˆ¿'
+					text: '鏂版埧'
 				},
 				{
 					key: 1,
 					link: '/myfocus',
-					text: 'æˆ‘çš„ç„¦ç‚¹'
+					text: '鎴戠殑鐒︾偣'
 				},
 				{
 					key: 2,
 					link: 'javascript:;',
-					text: 'æˆ‘çš„è´¦æˆ·'
+					text: '鎴戠殑璐︽埛'
 				}
 			];
 
-			var gender = 'ä¿å¯†';
+			var gender = '淇濆瘑';
 			if(this.state.res.data.gender == 1){
-				gender = 'ç”·';
+				gender = '鐢�';
 			}else if(this.state.res.data.gender == 2){
-				gender = 'å¥³';
+				gender = '濂�';
 			}
 			var h = $(window).height() - $('header').height() - $('footer').height() - $('.public-breadcrumb-bottom').height() + 'px';
 
 			return (
 			React.createElement("div", null, 
-				React.createElement(UCHeader, {data: {title: 'æˆ‘çš„è´¦æˆ·'}}), 
+				React.createElement(UCHeader, {data: {title: '鎴戠殑璐︽埛'}}), 
 				React.createElement("div", {className: "info-box", style: {minHeight: h}}, 
 				React.createElement("div", {className: "my-info-main"}, 
 					React.createElement("div", {className: "my-info-form"}, 
 						React.createElement("div", {className: "info-item clearfix", onClick: this.handleUploadAvatar}, 
-							React.createElement("span", {className: "label-left"}, "æˆ‘çš„å¤´åƒ"), 
+							React.createElement("span", {className: "label-left"}, "鎴戠殑澶村儚"), 
 							React.createElement("span", {className: "avatar-item item-right"}, 
 								React.createElement("img", {src: this.state.res.data.avatar}), 
 								React.createElement("span", {className: "arrow-right"}), 
@@ -25595,57 +25595,57 @@ console.log('test...');
 							)
 						), 
 						React.createElement("div", {className: "info-item clearfix", onClick: this.handleShowConfirm}, 
-							React.createElement("span", {className: "label-left"}, "ç„¦ç‚¹æ˜µç§°"), 
+							React.createElement("span", {className: "label-left"}, "鐒︾偣鏄电О"), 
 							React.createElement("span", {className: "nickname-item item-right"}, 
 								this.state.res.data.nickName, 
 								React.createElement("span", {className: "arrow-right"})
 							)
 						), 
 						React.createElement("div", {className: "info-item clearfix"}, 
-							React.createElement("span", {className: "label-left"}, "ç„¦ç‚¹è´¦æˆ·"), 
+							React.createElement("span", {className: "label-left"}, "鐒︾偣璐︽埛"), 
 							React.createElement("span", {className: "account-item item-right"}, 
 								this.state.res.data.userName, 
 								React.createElement("span", {className: "arrow-right"})
 							)
 						), 
 						React.createElement("div", {className: "info-item clearfix", onClick: this.handleShowGender}, 
-							React.createElement("span", {className: "label-left"}, "æ€§Â Â Â Â Â Â Â åˆ«"), 
+							React.createElement("span", {className: "label-left"}, "鎬犅犅犅犅犅犅犲埆"), 
 							React.createElement("span", {className: "gender-item item-right"}, 
 								gender, 
 								React.createElement("span", {className: "arrow-right"})
 							)
 						), 
 						React.createElement("div", {className: "info-item clearfix", onClick: this.handleShowBirth}, 
-							React.createElement("span", {className: "label-left"}, "å‡ºç”Ÿæ—¥æœŸ"), 
+							React.createElement("span", {className: "label-left"}, "鍑虹敓鏃ユ湡"), 
 							React.createElement("span", {className: "birth-item item-right"}, 
 								this.state.res.data.birthDay, 
 								React.createElement("span", {className: "arrow-right"})
 							)
 						), 
 						React.createElement(Link, {to: this.state.mobilePath, className: "info-item clearfix", onClick: this.handleMobileChange}, 
-							React.createElement("span", {className: "label-left"}, "æ‰‹æœºå·ç "), 
+							React.createElement("span", {className: "label-left"}, "鎵嬫満鍙风爜"), 
 							React.createElement("span", {className: "mobile-item item-right"}, 
 								this.state.res.data.showMobile, 
 								React.createElement("span", {className: "arrow-right"})
 							)
 						), 
 						React.createElement("a", {href: "http://login."+hostName+".cn/password/resetFirst?source=0", className: "info-item clearfix"}, 
-							React.createElement("span", {className: "label-left"}, "ä¿®æ”¹å¯†ç "), 
+							React.createElement("span", {className: "label-left"}, "淇敼瀵嗙爜"), 
 							React.createElement("span", {className: "pwd-item item-right"}, 
 								React.createElement("span", {className: "arrow-right"})
 							)
 						)
 					), 
 					React.createElement("div", {className: "logout-btn-box"}, 
-						React.createElement("a", {className: "logout-btn", href: "http://login."+hostName+".cn/login/logout?ru=http://uc."+hostName+".cn/myfocus"}, "é€€å‡ºç™»å½•")
+						React.createElement("a", {className: "logout-btn", href: "http://login."+hostName+".cn/login/logout?ru=http://uc."+hostName+".cn/myfocus"}, "閫€鍑虹櫥褰�")
 					)
 				), 
 				React.createElement("div", {className: this.state.showUpload== false ? 'confirm-dialog hidden-dialog' : 'confirm-dialog'}, 
 					React.createElement("div", {className: "dialog-main"}, 
 						React.createElement("div", {className: "dialog-content"}, 
-							React.createElement("div", {className: "dialog-top"}, "ä¸Šä¼ å¤´åƒå¤±è´¥ï¼Œè¯·é‡æ–°ä¸Šä¼ "), 
+							React.createElement("div", {className: "dialog-top"}, "涓婁紶澶村儚澶辫触锛岃閲嶆柊涓婁紶"), 
 							React.createElement("div", {className: "dialog-bottom"}, 
-								React.createElement("div", {className: "cancel-btn", onClick: this.handleHideUpload}, "ç¡®å®š")
+								React.createElement("div", {className: "cancel-btn", onClick: this.handleHideUpload}, "纭畾")
 							)
 						)
 					)
@@ -25653,10 +25653,10 @@ console.log('test...');
 				React.createElement("div", {className: this.state.showConfirm == false ? 'confirm-dialog hidden-dialog' : 'confirm-dialog'}, 
 					React.createElement("div", {className: "dialog-main"}, 
 						React.createElement("div", {className: "dialog-content"}, 
-							React.createElement("div", {className: "dialog-top"}, "æ˜µç§°åªèƒ½ä¿®æ”¹ä¸€æ¬¡ï¼"), 
+							React.createElement("div", {className: "dialog-top"}, "鏄电О鍙兘淇敼涓€娆★紒"), 
 							React.createElement("div", {className: "dialog-bottom"}, 
-								React.createElement("div", {className: "cancel-btn", onClick: this.handleHideConfirm}, "å–æ¶ˆ"), 
-								React.createElement(Link, {className: "confirm-btn", to: "/nickNameChange"}, "ä¿®æ”¹")
+								React.createElement("div", {className: "cancel-btn", onClick: this.handleHideConfirm}, "鍙栨秷"), 
+								React.createElement(Link, {className: "confirm-btn", to: "/nickNameChange"}, "淇敼")
 							)
 						)
 					)
@@ -25664,9 +25664,9 @@ console.log('test...');
 				React.createElement("div", {className: this.state.showChanged== false ? 'confirm-dialog hidden-dialog' : 'confirm-dialog'}, 
 					React.createElement("div", {className: "dialog-main"}, 
 						React.createElement("div", {className: "dialog-content"}, 
-							React.createElement("div", {className: "dialog-top"}, "æ˜µç§°åªèƒ½ä¿®æ”¹ä¸€æ¬¡ï¼"), 
+							React.createElement("div", {className: "dialog-top"}, "鏄电О鍙兘淇敼涓€娆★紒"), 
 							React.createElement("div", {className: "dialog-bottom"}, 
-								React.createElement("div", {className: "cancel-btn", onClick: this.handleHideChanged}, "ç¡®å®š")
+								React.createElement("div", {className: "cancel-btn", onClick: this.handleHideChanged}, "纭畾")
 							)
 						)
 					)
@@ -25674,22 +25674,22 @@ console.log('test...');
 				React.createElement("div", {className: this.state.showGender == false ? 'gender-box hidden-dialog' : 'gender-box'}, 
 					React.createElement("div", {className: "gender-wrapper"}, 
 						React.createElement("div", {className: "gender-select-box"}, 
-							React.createElement("div", {className: "gender-item", onClick: this.updateGender.bind(null,1)}, "ç”·"), 
-							React.createElement("div", {className: "gender-item", onClick: this.updateGender.bind(null,2)}, "å¥³")
+							React.createElement("div", {className: "gender-item", onClick: this.updateGender.bind(null,1)}, "鐢�"), 
+							React.createElement("div", {className: "gender-item", onClick: this.updateGender.bind(null,2)}, "濂�")
 						), 
-						React.createElement("div", {className: "gender-cancel-btn", onClick: this.handleHideGender}, "å–æ¶ˆ")
+						React.createElement("div", {className: "gender-cancel-btn", onClick: this.handleHideGender}, "鍙栨秷")
 					)
 				), 
 				React.createElement("div", {className: this.state.showBirth == false ? "birth-box hidden-dialog" : "birth-box"}, 
 					React.createElement("div", {className: "birth-wrapper"}, 
 						React.createElement("div", {className: "birth-title"}, 
-							React.createElement("div", {className: "cancel-btn", onClick: this.handleHideBirth}, "å–æ¶ˆ"), 
-							React.createElement("div", {className: "se-btn", onClick: this.handleSecret}, "ä¿å¯†"), 
-							React.createElement("div", {className: "confirm-btn", onClick: this.handleConfirmDate}, "ç¡®å®š")
+							React.createElement("div", {className: "cancel-btn", onClick: this.handleHideBirth}, "鍙栨秷"), 
+							React.createElement("div", {className: "se-btn", onClick: this.handleSecret}, "淇濆瘑"), 
+							React.createElement("div", {className: "confirm-btn", onClick: this.handleConfirmDate}, "纭畾")
 						), 
 						React.createElement("div", {className: "birth-list"}, 
 							React.createElement("div", {className: "demo"}, 
-								React.createElement("div", {className: "lie"}, "æ—¥æœŸè®¾ç½®-1:", React.createElement("input", {id: "beginTime", className: "kbtn"}))
+								React.createElement("div", {className: "lie"}, "鏃ユ湡璁剧疆-1:", React.createElement("input", {id: "beginTime", className: "kbtn"}))
 							), 
 							React.createElement("div", {id: "datePlugin"})
 						)
@@ -25841,11 +25841,11 @@ console.log('test...');
 				React.createElement("footer", null, 
 		            React.createElement("div", {className: "footer-nav"}, 
 		                React.createElement("div", {className: "footer-os"}, 
-		                    React.createElement("a", {className: "item active", "data-touchcolor": "#898989"}, "æ‰‹æœºç‰ˆ"), 
-		                    React.createElement("span", {onClick: this.mockLink, className: "item"}, "ç”µè„‘ç‰ˆ")
+		                    React.createElement("a", {className: "item active", "data-touchcolor": "#898989"}, "鎵嬫満鐗�"), 
+		                    React.createElement("span", {onClick: this.mockLink, className: "item"}, "鐢佃剳鐗�")
 		                )
 		            ), 
-		            React.createElement("div", {className: "footer-company"}, "Â©2016 focus.cn")
+		            React.createElement("div", {className: "footer-company"}, "漏2016 focus.cn")
 		        )
 			);
 		}
@@ -25904,23 +25904,23 @@ console.log('test...');
 	var testData = [
 		{
 			key: '0',
-			time: 'ä»Šå¤©',
+			time: '浠婂ぉ',
 			data: [
 				{
 					link: '/',
-					groupName: 'ä¸­æ˜‚æ—¶ä»£å¹¿åœº',
-					location: 'é—¨å¤´æ²ŸåŒº åŒºæ”¿åºœè¥¿åŒ—å‘500ç±³å¤„',
+					groupName: '涓槀鏃朵唬骞垮満',
+					location: '闂ㄥご娌熷尯 鍖烘斂搴滆タ鍖楀悜500绫冲',
 					price: '120',
-					unit: 'ä¸‡å…ƒ/å¥—',
+					unit: '涓囧厓/濂�',
 					groupImg: 'http://dcimg.f.itc.cn/q_70/app/cc/cc1d95ef43e1a4938608d4b2a4c7a3b6.jpg',
-					youhui: 'ç«‹å‡15ä¸‡'
+					youhui: '绔嬪噺15涓�'
 				},
 				{
 					link: '/',
-					groupName: 'ä¸­æ˜‚æ—¶ä»£å¹¿åœº',
-					location: 'é—¨å¤´æ²ŸåŒº åŒºæ”¿åºœè¥¿åŒ—å‘500ç±³å¤„',
+					groupName: '涓槀鏃朵唬骞垮満',
+					location: '闂ㄥご娌熷尯 鍖烘斂搴滆タ鍖楀悜500绫冲',
 					price: '120',
-					unit: 'ä¸‡å…ƒ/å¥—',
+					unit: '涓囧厓/濂�',
 					groupImg: 'http://dcimg.f.itc.cn/q_70/app/cc/cc1d95ef43e1a4938608d4b2a4c7a3b6.jpg',
 					youhui: ''
 				}
@@ -25928,23 +25928,23 @@ console.log('test...');
 		},
 		{
 			key: '1',
-			time: 'æ˜¨å¤©',
+			time: '鏄ㄥぉ',
 			data: [
 				{
 					link: '/',
-					groupName: 'ä¸­æ˜‚æ—¶ä»£å¹¿åœº',
-					location: 'é—¨å¤´æ²ŸåŒº åŒºæ”¿åºœè¥¿åŒ—å‘500ç±³å¤„',
+					groupName: '涓槀鏃朵唬骞垮満',
+					location: '闂ㄥご娌熷尯 鍖烘斂搴滆タ鍖楀悜500绫冲',
 					price: '120',
-					unit: 'ä¸‡å…ƒ/å¥—',
+					unit: '涓囧厓/濂�',
 					groupImg: 'http://dcimg.f.itc.cn/q_70/app/cc/cc1d95ef43e1a4938608d4b2a4c7a3b6.jpg',
-					youhui: 'ç«‹å‡15ä¸‡'
+					youhui: '绔嬪噺15涓�'
 				},
 				{
 					link: '/',
-					groupName: 'ä¸­æ˜‚æ—¶ä»£å¹¿åœº',
-					location: 'é—¨å¤´æ²ŸåŒº åŒºæ”¿åºœè¥¿åŒ—å‘500ç±³å¤„',
+					groupName: '涓槀鏃朵唬骞垮満',
+					location: '闂ㄥご娌熷尯 鍖烘斂搴滆タ鍖楀悜500绫冲',
 					price: '120',
-					unit: 'ä¸‡å…ƒ/å¥—',
+					unit: '涓囧厓/濂�',
 					groupImg: 'http://dcimg.f.itc.cn/q_70/app/cc/cc1d95ef43e1a4938608d4b2a4c7a3b6.jpg',
 					youhui: ''
 				}
@@ -25964,8 +25964,8 @@ console.log('test...');
 			return (
 				React.createElement("div", {className: "subscribe-bar"}, 
 					React.createElement("div", {className: "bar-box"}, 
-						React.createElement("div", {className: this.props.refs == 0 ? "subscribe-item actived" : "subscribe-item", onClick: this.handleChangeTab}, "æ–°æˆ¿"), 
-						React.createElement("div", {className: this.props.refs == 1 ? "subscribe-item actived" : "subscribe-item", onClick: this.handleChangeTab}, "äºŒæ‰‹æˆ¿")
+						React.createElement("div", {className: this.props.refs == 0 ? "subscribe-item actived" : "subscribe-item", onClick: this.handleChangeTab}, "鏂版埧"), 
+						React.createElement("div", {className: this.props.refs == 1 ? "subscribe-item actived" : "subscribe-item", onClick: this.handleChangeTab}, "浜屾墜鎴�")
 					)
 				)
 			);
@@ -26051,12 +26051,12 @@ console.log('test...');
 			return (
 				React.createElement("div", {className: this.props.refs == 0 ? 'dingyue-tool-bar' : 'dingyue-tool-bar hidden-bar'}, 
 					React.createElement("div", {className: "cancel-dingyue-btn", style: this.state.show == 0 ? {display: 'block'} : {display: 'none'}, onClick: this.showCancelBar}, 
-						React.createElement("p", null, React.createElement("i", null), "æ‰¹é‡å–æ¶ˆè®¢é˜…")
+						React.createElement("p", null, React.createElement("i", null), "鎵归噺鍙栨秷璁㈤槄")
 					), 
 					React.createElement("div", {className: "cancel-bar clearfix", style: this.state.show == 1 ? {display: 'block'} : {display: 'none'}}, 
-						React.createElement("span", {className: this.state.selectAll == false ? "select-all": "select-all selected", onClick: this.selectAll}, React.createElement("i", null, React.createElement("span", {className: "inner-icon"})), "å…¨é€‰"), 
-						React.createElement("span", {className: "exit-btn", onClick: this.hideCancelBar}, "å–æ¶ˆ"), 
-						React.createElement("span", {className: "confirm-btn", onClick: this.cancelSubscribe}, "ç¡®è®¤å–æ¶ˆ")
+						React.createElement("span", {className: this.state.selectAll == false ? "select-all": "select-all selected", onClick: this.selectAll}, React.createElement("i", null, React.createElement("span", {className: "inner-icon"})), "鍏ㄩ€�"), 
+						React.createElement("span", {className: "exit-btn", onClick: this.hideCancelBar}, "鍙栨秷"), 
+						React.createElement("span", {className: "confirm-btn", onClick: this.cancelSubscribe}, "纭鍙栨秷")
 					)
 				)
 			);
@@ -26079,15 +26079,15 @@ console.log('test...');
 									React.createElement("span", null, item.area), 
 									React.createElement("span", {className: "item-addr"}, item.location)
 								), 
-								React.createElement("p", {className: "manage-label"}, "è®¢é˜…ç®¡ç†")
+								React.createElement("p", {className: "manage-label"}, "璁㈤槄绠＄悊")
 							)
 						), 
 						React.createElement("div", {className: "manage-box", "data-groupid": "7906"}, 
-							React.createElement("span", {name: "change_price", className: "price actived", onClick: this.updateSubscribe}, "ä»·æ ¼å˜åŠ¨"), 
-							React.createElement("span", {name: "open", className: "open actived", onClick: this.updateSubscribe}, "å¼€ç›˜é€šçŸ¥"), 
-							React.createElement("span", {name: "discount", className: "sale actived", onClick: this.updateSubscribe}, "æŠ˜æ‰£ä¼˜æƒ "), 
-							React.createElement("span", {name: "kanfangtuan", className: "pft actived", onClick: this.updateSubscribe}, "çœ‹æˆ¿å›¢"), 
-							React.createElement("span", {name: "news", className: "dynamic actived", onClick: this.updateSubscribe}, "åŠ¨æ€")
+							React.createElement("span", {name: "change_price", className: "price actived", onClick: this.updateSubscribe}, "浠锋牸鍙樺姩"), 
+							React.createElement("span", {name: "open", className: "open actived", onClick: this.updateSubscribe}, "寮€鐩橀€氱煡"), 
+							React.createElement("span", {name: "discount", className: "sale actived", onClick: this.updateSubscribe}, "鎶樻墸浼樻儬"), 
+							React.createElement("span", {name: "kanfangtuan", className: "pft actived", onClick: this.updateSubscribe}, "鐪嬫埧鍥�"), 
+							React.createElement("span", {name: "news", className: "dynamic actived", onClick: this.updateSubscribe}, "鍔ㄦ€�")
 						), 
 						React.createElement("div", {className: "item-select"}, 
 							React.createElement("div", {className: "copy-header"}), 
@@ -26146,7 +26146,7 @@ console.log('test...');
 			var items = testData.map(function(item){
 				return (
 					React.createElement("div", {className: "dingyue-item"}, 
-						React.createElement("p", {className: "item-time"}, "è®¢é˜…æ—¶é—´ï¼š", item.time), 
+						React.createElement("p", {className: "item-time"}, "璁㈤槄鏃堕棿锛�", item.time), 
 						React.createElement(SubscribeItems, {data: item.data})
 					)
 				);
@@ -26171,8 +26171,8 @@ console.log('test...');
 				items = (React.createElement("div", {className: "none-kft"}, 
 							React.createElement("div", {className: "none-tips"}, 
 								React.createElement("span", {className: "none-bg"}), 
-								React.createElement("p", {className: "none-title-1"}, "æš‚æ— è®¢é˜…çš„äºŒæ‰‹æˆ¿"), 
-								React.createElement("p", {className: "none-title-2"}, "è®¢é˜…æ„Ÿå…´è¶£çš„äºŒæ‰‹æˆ¿ï¼Œéšæ—¶èŽ·å–æœ€æ–°åŠ¨æ€")
+								React.createElement("p", {className: "none-title-1"}, "鏆傛棤璁㈤槄鐨勪簩鎵嬫埧"), 
+								React.createElement("p", {className: "none-title-2"}, "璁㈤槄鎰熷叴瓒ｇ殑浜屾墜鎴匡紝闅忔椂鑾峰彇鏈€鏂板姩鎬�")
 							)
 						));
 			}
@@ -26376,7 +26376,7 @@ console.log('test...');
 								React.createElement("span", {className: "loading-icon-1"}), 
 								React.createElement("span", {className: "loading-icon-2"})
 							), 
-							React.createElement("p", null, "æ‹¼å‘½åŠ è½½ä¸­...")
+							React.createElement("p", null, "鎷煎懡鍔犺浇涓�...")
 						)
 					)
 				);
@@ -26390,8 +26390,8 @@ console.log('test...');
 					lists = (React.createElement("div", {className: "none-kft", style: {'width': '100%', 'height': h}}, 
 								React.createElement("div", {className: "none-tips"}, 
 									React.createElement("span", {className: "none-bg"}), 
-									React.createElement("p", {className: "none-title-1"}, "æš‚æ— å…³æ³¨çš„æ¥¼ç›˜"), 
-									React.createElement("p", {className: "none-title-2"}, "å…³æ³¨æ„Ÿå…´è¶£çš„æ¥¼ç›˜ï¼Œéšæ—¶èŽ·å–æœ€æ–°åŠ¨æ€")
+									React.createElement("p", {className: "none-title-1"}, "鏆傛棤鍏虫敞鐨勬ゼ鐩�"), 
+									React.createElement("p", {className: "none-title-2"}, "鍏虫敞鎰熷叴瓒ｇ殑妤肩洏锛岄殢鏃惰幏鍙栨渶鏂板姩鎬�")
 								)
 							));
 				}else{
@@ -26405,13 +26405,13 @@ console.log('test...');
 							if(nDate.getFullYear() == concernedDate.getFullYear() && nDate.getMonth() == concernedDate.getMonth() && nDate.getDate() == concernedDate.getDate()){
 								lists.push(
 									React.createElement("div", {className: "item-bar", key: concernedData[i].concernedTime}, 
-										"å…³æ³¨æ—¶é—´ï¼šä»Šå¤©"
+										"鍏虫敞鏃堕棿锛氫粖澶�"
 									)
 								);	
 							}else{
 								lists.push(
 									React.createElement("div", {className: "item-bar", key: concernedData[i].concernedTime}, 
-										"å…³æ³¨æ—¶é—´ï¼š", concernedData[i].concernedTime
+										"鍏虫敞鏃堕棿锛�", concernedData[i].concernedTime
 									)
 								);
 							}
@@ -26510,7 +26510,7 @@ console.log('test...');
 								React.createElement("span", {className: "loading-icon-1"}), 
 								React.createElement("span", {className: "loading-icon-2"})
 							), 
-							React.createElement("p", null, "æ‹¼å‘½åŠ è½½ä¸­...")
+							React.createElement("p", null, "鎷煎懡鍔犺浇涓�...")
 						)
 					)
 				);
@@ -26525,15 +26525,15 @@ console.log('test...');
 					items = (React.createElement("div", {className: "none-kft", style: {'width': '100%', 'height': h}}, 
 								React.createElement("div", {className: "none-tips"}, 
 									React.createElement("span", {className: "none-bg"}), 
-									React.createElement("p", {className: "none-title-1"}, "æš‚æ— å…³æ³¨çš„çœ‹æˆ¿å›¢"), 
-									React.createElement("p", {className: "none-title-2"}, "å…³æ³¨æ„Ÿå…´è¶£çš„çœ‹æˆ¿å›¢ï¼Œéšæ—¶èŽ·å–æœ€æ–°åŠ¨æ€")
+									React.createElement("p", {className: "none-title-1"}, "鏆傛棤鍏虫敞鐨勭湅鎴垮洟"), 
+									React.createElement("p", {className: "none-title-2"}, "鍏虫敞鎰熷叴瓒ｇ殑鐪嬫埧鍥紝闅忔椂鑾峰彇鏈€鏂板姩鎬�")
 								)
 							));
 				}else{
 					for(var i = 0; i < tmpData.length;i++){
 
 						var link = 'http://m.focus.cn/' + tmpData[i].cityPrefix + '/pafangtuan/' + tmpData[i].lineId,
-							timeShow = tmpData[i].applyDeadLine.replace('-', 'å¹´').replace('-', 'æœˆ') + 'æ—¥';
+							timeShow = tmpData[i].applyDeadLine.replace('-', '骞�').replace('-', '鏈�') + '鏃�';
 
 						lists.push(
 							React.createElement("a", {className: "item-kft", href: link, key: tmpData[i].lineId}, 
@@ -26541,7 +26541,7 @@ console.log('test...');
 								React.createElement("div", {className: "item-info"}, 
 									React.createElement("p", {className: "group-name"}, tmpData[i].houseVisitName), 
 									React.createElement("p", {className: "group-desc"}, tmpData[i].houseVisitDesc), 
-									React.createElement("p", {className: "group-time"}, "æˆªæ­¢æ—¶é—´ï¼š", timeShow)
+									React.createElement("p", {className: "group-time"}, "鎴鏃堕棿锛�", timeShow)
 								)
 							)
 						);
@@ -26638,7 +26638,7 @@ console.log('test...');
 								React.createElement("span", {className: "loading-icon-1"}), 
 								React.createElement("span", {className: "loading-icon-2"})
 							), 
-							React.createElement("p", null, "æ‹¼å‘½åŠ è½½ä¸­...")
+							React.createElement("p", null, "鎷煎懡鍔犺浇涓�...")
 						)
 					)
 				);
@@ -26652,8 +26652,8 @@ console.log('test...');
 					list = (React.createElement("div", {className: "none-kft", style: {'width': '100%', 'height': h}}, 
 								React.createElement("div", {className: "none-tips"}, 
 									React.createElement("span", {className: "none-bg"}), 
-									React.createElement("p", {className: "none-title-1"}, "æš‚æ— å…³æ³¨çš„æˆ·åž‹"), 
-									React.createElement("p", {className: "none-title-2"}, "å…³æ³¨æ„Ÿå…´è¶£çš„æˆ·åž‹ï¼Œéšæ—¶èŽ·å–æœ€æ–°åŠ¨æ€")
+									React.createElement("p", {className: "none-title-1"}, "鏆傛棤鍏虫敞鐨勬埛鍨�"), 
+									React.createElement("p", {className: "none-title-2"}, "鍏虫敞鎰熷叴瓒ｇ殑鎴峰瀷锛岄殢鏃惰幏鍙栨渶鏂板姩鎬�")
 								)
 							));
 				}else{
@@ -26672,7 +26672,7 @@ console.log('test...');
 											React.createElement("span", {className: "layout-name"}, "-", tmpData[i].layoutName), 
 											React.createElement("span", {className: "is-sell"}, tmpData[i].saleStatusStr)
 										), 
-										React.createElement("p", {className: "group-desc"}, tmpData[i].groupName, "Â Â Â Â ", tmpData[i].area, "ãŽ¡"), 
+										React.createElement("p", {className: "group-desc"}, tmpData[i].groupName, "聽聽聽聽", tmpData[i].area, "銕�"), 
 										React.createElement("p", {className: "group-price"}, tmpData[i].showPrice)
 									), 
 									React.createElement("span", {className: "arrow-right"})
@@ -26702,7 +26702,7 @@ console.log('test...');
 			list.push(React.createElement("div", {className: "none-kft", key: "noneEsf"}, 
 						React.createElement("div", {className: "none-tips"}, 
 							React.createElement("span", {className: "none-bg"}), 
-							React.createElement("p", {className: "none-title-1"}, "æš‚æœªå¼€é€šè¯¥æœåŠ¡ï¼Œæ•¬è¯·æœŸå¾…")
+							React.createElement("p", {className: "none-title-1"}, "鏆傛湭寮€閫氳鏈嶅姟锛屾暚璇锋湡寰�")
 						)
 					));
 			
@@ -26753,10 +26753,10 @@ console.log('test...');
 			return (
 				React.createElement("div", {className: "attention-bar"}, 
 					React.createElement("div", {className: "bar-box"}, 
-						React.createElement("div", {className: this.props.refs == 0 ? "attention-item actived" : "attention-item", onClick: this.handleChangeTab}, "æ¥¼ç›˜"), 
-						React.createElement("div", {className: this.props.refs == 1 ? "attention-item actived" : "attention-item", onClick: this.handleChangeTab}, "æˆ·åž‹"), 
-						React.createElement("div", {className: this.props.refs == 2 ? "attention-item actived" : "attention-item", onClick: this.handleChangeTab}, "çœ‹æˆ¿å›¢"), 
-						React.createElement("div", {className: this.props.refs == 3 ? "attention-item actived" : "attention-item", onClick: this.handleChangeTab}, "äºŒæ‰‹æˆ¿")
+						React.createElement("div", {className: this.props.refs == 0 ? "attention-item actived" : "attention-item", onClick: this.handleChangeTab}, "妤肩洏"), 
+						React.createElement("div", {className: this.props.refs == 1 ? "attention-item actived" : "attention-item", onClick: this.handleChangeTab}, "鎴峰瀷"), 
+						React.createElement("div", {className: this.props.refs == 2 ? "attention-item actived" : "attention-item", onClick: this.handleChangeTab}, "鐪嬫埧鍥�"), 
+						React.createElement("div", {className: this.props.refs == 3 ? "attention-item actived" : "attention-item", onClick: this.handleChangeTab}, "浜屾墜鎴�")
 					)
 				)
 			);
@@ -26786,23 +26786,23 @@ console.log('test...');
 				{
 					key: 0,
 					link: 'http://m.focus.cn/',
-					text: 'æ–°æˆ¿'
+					text: '鏂版埧'
 				},
 				{
 					key: 1,
 					link: '/myfocus',
-					text: 'æˆ‘çš„ç„¦ç‚¹'
+					text: '鎴戠殑鐒︾偣'
 				},
 				{
 					key: 2,
 					link: 'javascript:;',
-					text: 'æˆ‘çš„å…³æ³¨'
+					text: '鎴戠殑鍏虫敞'
 				}
 			];
 			
 			return (
 				React.createElement("div", null, 
-		        	React.createElement(UCHeader, {data: {title: 'æˆ‘çš„å…³æ³¨'}}), 
+		        	React.createElement(UCHeader, {data: {title: '鎴戠殑鍏虫敞'}}), 
 					React.createElement("div", {className: "my-attention"}, 
 						React.createElement(AttentionBar, {refs: this.state.showTab, triggerChangeTab: this.handleChangeTab}), 
 						React.createElement(AttentionList, {refs: this.state.showTab, triggerGetTab: this.getTabIndex})
@@ -26866,11 +26866,11 @@ console.log('test...');
 			var hsotName = Tools.getHostName() ;
 			return (
 				React.createElement("div", {style: {'display': this.state.show == true ? 'block' : 'none'}}, 
-		        	React.createElement(UCHeader, {data: {title: 'æˆ‘çš„æˆ¿æºç®¡ç†'}}), 
+		        	React.createElement(UCHeader, {data: {title: '鎴戠殑鎴挎簮绠＄悊'}}), 
 					React.createElement("div", {className: "none-kft", style: {'height': $(window).height() - $('header').height() + 'px'}}, 
 						React.createElement("div", {className: "none-tips"}, 
 							React.createElement("span", {className: "none-bg-new"}), 
-							React.createElement("p", {className: "none-title-1"}, "æš‚æœªå¼€é€šè¯¥æœåŠ¡ï¼Œæ•¬è¯·æœŸå¾…ï¼")
+							React.createElement("p", {className: "none-title-1"}, "鏆傛湭寮€閫氳鏈嶅姟锛屾暚璇锋湡寰咃紒")
 						)
 					)
 	        	)
@@ -26905,8 +26905,8 @@ console.log('test...');
 			return (
 				React.createElement("div", {className: "notes-bar"}, 
 					React.createElement("div", {className: "bar-box"}, 
-						React.createElement("div", {className: this.props.refs == 0 ? "subscribe-item actived" : "subscribe-item", onClick: this.handleChangeTab}, "çœ‹æˆ¿å›¢/çœ‹æˆ¿æ—¥ç¨‹"), 
-						React.createElement("div", {className: this.props.refs == 1 ? "subscribe-item actived" : "subscribe-item", onClick: this.handleChangeTab}, "çœ‹æˆ¿ç¬”è®°")
+						React.createElement("div", {className: this.props.refs == 0 ? "subscribe-item actived" : "subscribe-item", onClick: this.handleChangeTab}, "鐪嬫埧鍥�/鐪嬫埧鏃ョ▼"), 
+						React.createElement("div", {className: this.props.refs == 1 ? "subscribe-item actived" : "subscribe-item", onClick: this.handleChangeTab}, "鐪嬫埧绗旇")
 					)
 				)
 			);
@@ -26982,7 +26982,7 @@ console.log('test...');
 				data: 'pageNo='+ this.pageNo +'&pageSize=10&expire=' + isExpired,
 				success: function(res){
 					if(That.isMounted()){
-						//èŽ·å–åŽŸå§‹state
+						//鑾峰彇鍘熷state
 						var newState = Tools.clone(That.state);
 						//state concat
 						if(res.data.total == 0){
@@ -26996,13 +26996,13 @@ console.log('test...');
 
 						newState.res.data.data = newArr;
 
-						//åˆ¤æ–­æ˜¯å¦æœ‰ä¸‹ä¸€é¡µ
-						//å¦‚æœ‰
+						//鍒ゆ柇鏄惁鏈変笅涓€椤�
+						//濡傛湁
 						if(res.data.hasNext){
 							That.setState(newState);
 							That.handleBindScroll();
 						}else{
-						//å¦‚æ— 
+						//濡傛棤
 							if(That.sendType < 3){
 								That.setState(newState);
 
@@ -27011,7 +27011,7 @@ console.log('test...');
 
 								That.handleAjaxUpdate();
 							}else{
-								//4ç§éƒ½æ²¡æ•°æ®äº†
+								//4绉嶉兘娌℃暟鎹簡
 								That.setState(newState);
 							}
 
@@ -27046,7 +27046,7 @@ console.log('test...');
 								timerShow = '';
 
 							if(tmpData[i].sendType == 2){
-								overIcon = React.createElement("span", {className: "over-icon"}, "å·²ç»“æŸ");
+								overIcon = React.createElement("span", {className: "over-icon"}, "宸茬粨鏉�");
 							}
 							if(tmpData[i].guideMobile != ''){
 								var telShow = "tel:" + tmpData[i].guideMobile;
@@ -27073,18 +27073,18 @@ console.log('test...');
 											React.createElement("div", {className: "item-user"}, 
 												React.createElement("img", {className: "item-img", src: tmpData[i].linePicUrl}), 
 												React.createElement("div", {className: "item-info"}, 
-													React.createElement("p", {className: "item-time"}, "å‘å›¢æ—¥æœŸï¼š", React.createElement("span", {className: "special"}, timerShow)), 
-													React.createElement("p", {className: "item-status"}, "ç­¾åˆ°çŠ¶æ€ï¼š", React.createElement("span", {className: "special"}, tmpData[i].isRealJoin == false ? 'æœªç­¾åˆ°' : 'å·²ç­¾åˆ°')), 
-													React.createElement("p", {className: "item-guwen"}, "å¸¦ç­¾äººï¼š", React.createElement("span", {className: "special"}, tmpData[i].guideName)), 
+													React.createElement("p", {className: "item-time"}, "鍙戝洟鏃ユ湡锛�", React.createElement("span", {className: "special"}, timerShow)), 
+													React.createElement("p", {className: "item-status"}, "绛惧埌鐘舵€侊細", React.createElement("span", {className: "special"}, tmpData[i].isRealJoin == false ? '鏈鍒�' : '宸茬鍒�')), 
+													React.createElement("p", {className: "item-guwen"}, "甯︾浜猴細", React.createElement("span", {className: "special"}, tmpData[i].guideName)), 
 													guideMobile
 												)
 											), 
 											React.createElement("div", {className: "item-bar"}, 
-												React.createElement("a", {href: "javascript:;", className: "sign-info", "data-name": tmpData[i].applyName, "data-mobile": tmpData[i].applyMobile}, "æŠ¥åä¿¡æ¯"), 
+												React.createElement("a", {href: "javascript:;", className: "sign-info", "data-name": tmpData[i].applyName, "data-mobile": tmpData[i].applyMobile}, "鎶ュ悕淇℃伅"), 
 												React.createElement("div", {className: "split-space"}), 
-												React.createElement("a", {href: goufangLink, className: tmpData[i].isRealJoin == true ? '' : 'diabled-link'}, "è´­æˆ¿æ„å‘"), 
+												React.createElement("a", {href: goufangLink, className: tmpData[i].isRealJoin == true ? '' : 'diabled-link'}, "璐埧鎰忓悜"), 
 												React.createElement("div", {className: "split-space"}), 
-												React.createElement("a", {href: dianpingLink, className: tmpData[i].isRealJoin == true ? '' : 'diabled-link'}, "çœ‹æˆ¿ç‚¹è¯„")
+												React.createElement("a", {href: dianpingLink, className: tmpData[i].isRealJoin == true ? '' : 'diabled-link'}, "鐪嬫埧鐐硅瘎")
 											)
 										)
 									)
@@ -27100,18 +27100,18 @@ console.log('test...');
 											React.createElement("div", {className: "item-user"}, 
 												React.createElement("img", {className: "item-img", src: tmpData[i].linePicUrl}), 
 												React.createElement("div", {className: "item-info"}, 
-													React.createElement("p", {className: "item-time"}, "å‘å›¢æ—¥æœŸï¼š", React.createElement("span", {className: "special"}, timerShow)), 
-													React.createElement("p", {className: "item-status"}, "ç­¾åˆ°çŠ¶æ€ï¼š", React.createElement("span", {className: "special"}, tmpData[i].isRealJoin == false ? 'æœªç­¾åˆ°' : 'å·²ç­¾åˆ°')), 
-													React.createElement("p", {className: "item-guwen"}, "å¸¦ç­¾äººï¼š", React.createElement("span", {className: "special"}, tmpData[i].guideName)), 
+													React.createElement("p", {className: "item-time"}, "鍙戝洟鏃ユ湡锛�", React.createElement("span", {className: "special"}, timerShow)), 
+													React.createElement("p", {className: "item-status"}, "绛惧埌鐘舵€侊細", React.createElement("span", {className: "special"}, tmpData[i].isRealJoin == false ? '鏈鍒�' : '宸茬鍒�')), 
+													React.createElement("p", {className: "item-guwen"}, "甯︾浜猴細", React.createElement("span", {className: "special"}, tmpData[i].guideName)), 
 													guideMobile
 												)
 											), 
 											React.createElement("div", {className: "item-bar"}, 
-												React.createElement("a", {href: "javascript:;", className: "sign-info", "data-name": tmpData[i].applyName, "data-mobile": tmpData[i].applyMobile}, "æŠ¥åä¿¡æ¯"), 
+												React.createElement("a", {href: "javascript:;", className: "sign-info", "data-name": tmpData[i].applyName, "data-mobile": tmpData[i].applyMobile}, "鎶ュ悕淇℃伅"), 
 												React.createElement("div", {className: "split-space"}), 
-												React.createElement("a", {href: goufangLink, className: tmpData[i].isRealJoin == true ? '' : 'diabled-link'}, "è´­æˆ¿æ„å‘"), 
+												React.createElement("a", {href: goufangLink, className: tmpData[i].isRealJoin == true ? '' : 'diabled-link'}, "璐埧鎰忓悜"), 
 												React.createElement("div", {className: "split-space"}), 
-												React.createElement("a", {href: dianpingLink, className: tmpData[i].isRealJoin == true ? '' : 'diabled-link'}, "çœ‹æˆ¿ç‚¹è¯„")
+												React.createElement("a", {href: dianpingLink, className: tmpData[i].isRealJoin == true ? '' : 'diabled-link'}, "鐪嬫埧鐐硅瘎")
 											)
 										)
 									)
@@ -27142,7 +27142,7 @@ console.log('test...');
 											React.createElement("div", {className: "over-icon"})
 										), 
 										React.createElement("div", {className: "time-bar"}, 
-											React.createElement("span", {className: "time-icon"}), "é¢„çº¦æ—¶é—´ï¼š", tmpData[i].bookTime
+											React.createElement("span", {className: "time-icon"}), "棰勭害鏃堕棿锛�", tmpData[i].bookTime
 										), 
 										React.createElement("div", {className: "item-info"}, 
 											React.createElement("img", {className: "item-img", src: tmpData[i].logoUrl}), 
@@ -27151,11 +27151,11 @@ console.log('test...');
 												React.createElement("p", {className: "item-desc"}, tmpData[i].address), 
 												React.createElement("p", {className: "item-price"}, tmpData[i].showPrice), 
 												discountShow, 
-												React.createElement("a", {href: link, className: "item-link"}, "æŸ¥çœ‹è¯¦æƒ…")
+												React.createElement("a", {href: link, className: "item-link"}, "鏌ョ湅璇︽儏")
 											)
 										), 
 										React.createElement("div", {className: "item-guwen"}, 
-											React.createElement("p", {className: "guwen-label"}, "æˆ‘çš„ä¸“å±žçœ‹æˆ¿é¡¾é—®"), 
+											React.createElement("p", {className: "guwen-label"}, "鎴戠殑涓撳睘鐪嬫埧椤鹃棶"), 
 											React.createElement("div", {className: "guwen-item"}, 
 												React.createElement("img", {className: "guwen-avatar", src: "http://a1.itc.cn/sceapp/focus_static/passport/images/default_avatar.jpg"}), 
 												React.createElement("p", {className: "guwen-name"}, tmpData[i].realtorName), 
@@ -27172,7 +27172,7 @@ console.log('test...');
 											React.createElement("div", {className: "over-icon"})
 										), 
 										React.createElement("div", {className: "time-bar"}, 
-											React.createElement("span", {className: "time-icon"}), "é¢„çº¦æ—¶é—´ï¼š", tmpData[i].bookTime
+											React.createElement("span", {className: "time-icon"}), "棰勭害鏃堕棿锛�", tmpData[i].bookTime
 										), 
 										React.createElement("div", {className: "item-info"}, 
 											React.createElement("img", {className: "item-img", src: tmpData[i].logoUrl}), 
@@ -27181,11 +27181,11 @@ console.log('test...');
 												React.createElement("p", {className: "item-desc"}, tmpData[i].address), 
 												React.createElement("p", {className: "item-price"}, tmpData[i].showPrice), 
 												discountShow, 
-												React.createElement("a", {href: link, className: "item-link"}, "æŸ¥çœ‹è¯¦æƒ…")
+												React.createElement("a", {href: link, className: "item-link"}, "鏌ョ湅璇︽儏")
 											)
 										), 
 										React.createElement("div", {className: "item-guwen"}, 
-											React.createElement("p", {className: "guwen-label"}, "æˆ‘çš„ä¸“å±žçœ‹æˆ¿é¡¾é—®"), 
+											React.createElement("p", {className: "guwen-label"}, "鎴戠殑涓撳睘鐪嬫埧椤鹃棶"), 
 											React.createElement("div", {className: "guwen-item"}, 
 												React.createElement("img", {className: "guwen-avatar", src: "http://a1.itc.cn/sceapp/focus_static/passport/images/default_avatar.jpg"}), 
 												React.createElement("p", {className: "guwen-name"}, tmpData[i].realtorName), 
@@ -27207,7 +27207,7 @@ console.log('test...');
 							React.createElement("div", {className: "none-kft", style: {'width': '100%', 'height': h}}, 
 								React.createElement("div", {className: "none-tips"}, 
 									React.createElement("span", {className: "none-bg"}), 
-									React.createElement("p", {className: "none-title-1"}, "æš‚æ— çœ‹æˆ¿å›¢æ—¥ç¨‹")
+									React.createElement("p", {className: "none-title-1"}, "鏆傛棤鐪嬫埧鍥㈡棩绋�")
 								)
 							)
 						);
@@ -27224,19 +27224,19 @@ console.log('test...');
 			return (
 				React.createElement("div", {style: {'width': '100%', 'minHeight': h}}, 
 					React.createElement("div", {className: "list-label hidden-label"}, 
-						React.createElement("span", {className: "label-icon"}), "æ–°æˆ¿-çœ‹æˆ¿å›¢"
+						React.createElement("span", {className: "label-icon"}), "鏂版埧-鐪嬫埧鍥�"
 					), 
 					lists, 
 					React.createElement("div", {className: "list-label hidden-label"}, 
-						React.createElement("span", {className: "label-icon"}), "æ–°æˆ¿-ä¸ªäººæ—¥ç¨‹"
+						React.createElement("span", {className: "label-icon"}), "鏂版埧-涓汉鏃ョ▼"
 					), 
 					lists2, 
 					React.createElement("div", {className: "list-label hidden-label"}, 
-						React.createElement("span", {className: "label-icon"}), "æ–°æˆ¿-çœ‹æˆ¿å›¢(å·²è¿‡æœŸ)"
+						React.createElement("span", {className: "label-icon"}), "鏂版埧-鐪嬫埧鍥�(宸茶繃鏈�)"
 					), 
 					lists3, 
 					React.createElement("div", {className: "list-label hidden-label"}, 
-						React.createElement("span", {className: "label-icon"}), "æ–°æˆ¿-ä¸ªäººæ—¥ç¨‹(å·²è¿‡æœŸ)"
+						React.createElement("span", {className: "label-icon"}), "鏂版埧-涓汉鏃ョ▼(宸茶繃鏈�)"
 					), 
 					lists4
 				)
@@ -27307,7 +27307,7 @@ console.log('test...');
 						newState.res.data.data = newArr;
 						newState.loaded = true;
 						That.setState(newState);
-						//åˆ¤æ–­æ˜¯å¦æœ‰ä¸‹ä¸€é¡µ
+						//鍒ゆ柇鏄惁鏈変笅涓€椤�
 						if(res.data.hasNext){
 							That.setState(newState);
 							That.handleBindScroll();
@@ -27319,7 +27319,7 @@ console.log('test...');
 		render: function(){
 
 			var downLoadLink = '';
-			// æ ¹æ®ä¸åŒè®¾å¤‡è®¾ç½® æ‚¬æµ®æ¡ ä¸åŒçš„ä¸‹è½½åœ°å€
+			// 鏍规嵁涓嶅悓璁惧璁剧疆 鎮诞鏉� 涓嶅悓鐨勪笅杞藉湴鍧€
 			if(window.navigator.userAgent.toLowerCase().indexOf('android') === -1){
 				downLoadLink = 'https://itunes.apple.com/cn/app/id592992070?mt=8';
 			}else{
@@ -27328,8 +27328,8 @@ console.log('test...');
 			var noneTips = (
 				React.createElement("div", {className: "none-kft", key: "dn1", style: {'height': ($(window).height() - $('header').height() - $('.notes-bar').height() - $('.public-breadcrumb-bottom').height() - $('footer').height()) + 'px'}}, 
 					React.createElement("div", {className: "none-tips"}, 
-						React.createElement("a", {className: "none-btn", href: downLoadLink}, "æ–°å»ºç¬”è®°"), 
-						React.createElement("p", {className: "none-title-1"}, "è¿™é‡Œè¿˜æ²¡æœ‰çœ‹æˆ¿ç¬”è®°")
+						React.createElement("a", {className: "none-btn", href: downLoadLink}, "鏂板缓绗旇"), 
+						React.createElement("p", {className: "none-title-1"}, "杩欓噷杩樻病鏈夌湅鎴跨瑪璁�")
 					)
 				)
 			);
@@ -27338,7 +27338,7 @@ console.log('test...');
 
 			items.push(
 				React.createElement("div", {className: "diary-total-count", key: "tp1"}, 
-					"æ‚¨å…±çœ‹äº†", React.createElement("span", {className: "special-text"}, this.state.res.data.total), "ä¸ªæ¥¼ç›˜"
+					"鎮ㄥ叡鐪嬩簡", React.createElement("span", {className: "special-text"}, this.state.res.data.total), "涓ゼ鐩�"
 				)
 			);
 
@@ -27355,7 +27355,7 @@ console.log('test...');
 							label1 = React.createElement("span", {className: "label-item"}, diaryData[i].showPrice);
 						}
 						if(diaryData[i].hasIntentionType){
-							label2 = React.createElement("span", {className: "label-item"}, "æœ‰æ„å‘æˆ·åž‹");
+							label2 = React.createElement("span", {className: "label-item"}, "鏈夋剰鍚戞埛鍨�");
 						}
 						if(diaryData[i].imgUrl != ''){
 							img = React.createElement("img", {className: "diary-imgs", src: diaryData[i].imgUrl})
@@ -27367,26 +27367,26 @@ console.log('test...');
 							React.createElement("div", {className: "diary-item", key: i}, 
 								React.createElement("div", {className: "diary-label"}, 
 									React.createElement("span", {className: "title"}, diaryData[i].groupName), 
-									React.createElement("span", {className: "time"}, "è®°å½•äºŽ", diaryData[i].noteTime)
+									React.createElement("span", {className: "time"}, "璁板綍浜�", diaryData[i].noteTime)
 								), 
 								React.createElement("div", {className: "diary-main"}, 
 									img, 
 									React.createElement("div", {className: "diary-info"}, 
 										React.createElement("p", null, 
-											React.createElement("span", {className: "info-label"}, "æ¥¼ç›˜å‡ä»·ï¼š"), 
+											React.createElement("span", {className: "info-label"}, "妤肩洏鍧囦环锛�"), 
 											React.createElement("span", {className: "info-value"}, diaryData[i].showPrice)
 										), 
 										React.createElement("p", null, 
-											React.createElement("span", {className: "info-label"}, "å¼€ç›˜æ—¶é—´ï¼š"), 
-											React.createElement("span", {className: "info-value"}, diaryData[i].saleTime == undefined ? 'æœªå¡«å†™' : diaryData[i].saleTime)
+											React.createElement("span", {className: "info-label"}, "寮€鐩樻椂闂达細"), 
+											React.createElement("span", {className: "info-value"}, diaryData[i].saleTime == undefined ? '鏈～鍐�' : diaryData[i].saleTime)
 										), 
 										React.createElement("p", null, 
-											React.createElement("span", {className: "info-label"}, "å…¥ä½æ—¶é—´ï¼š"), 
-											React.createElement("span", {className: "info-value"}, (diaryData[i].moveInTime == undefined || diaryData[i].moveInTime == '') ? 'æœªå¡«å†™' : diaryData[i].moveInTime)
+											React.createElement("span", {className: "info-label"}, "鍏ヤ綇鏃堕棿锛�"), 
+											React.createElement("span", {className: "info-value"}, (diaryData[i].moveInTime == undefined || diaryData[i].moveInTime == '') ? '鏈～鍐�' : diaryData[i].moveInTime)
 										), 
 										React.createElement("p", null, 
-											React.createElement("span", {className: "info-label"}, "ç‰©ä¸šè´¹ï¼š"), 
-											React.createElement("span", {className: "info-value"}, (diaryData[i].propertyFee == undefined || diaryData[i].propertyFee == '' || diaryData[i].propertyFee == 0) ? 'æœªå¡«å†™' : diaryData[i].propertyFee + 'å…ƒ/ãŽ¡')
+											React.createElement("span", {className: "info-label"}, "鐗╀笟璐癸細"), 
+											React.createElement("span", {className: "info-value"}, (diaryData[i].propertyFee == undefined || diaryData[i].propertyFee == '' || diaryData[i].propertyFee == 0) ? '鏈～鍐�' : diaryData[i].propertyFee + '鍏�/銕�')
 										)
 									)
 								)
@@ -27448,13 +27448,13 @@ console.log('test...');
 		},
 		componentDidMount: function(){
 
-			// æŠ¥åä¿¡æ¯å¼¹å±‚
+			// 鎶ュ悕淇℃伅寮瑰眰
 	        var overlay = $('.kft-overlay'),
-	            // æŠ¥åä¿¡æ¯ä¸»ä½“
+	            // 鎶ュ悕淇℃伅涓讳綋
 	        overlayCon = overlay.find('.other-purpose-content'),
-	            // æŠ¥åç¡®è®¤æŒ‰é’®
+	            // 鎶ュ悕纭鎸夐挳
 	        overlayConfirm = overlayCon.find('.other-purpose-confirm'),
-	            // æŠ¥åå…³é—­æŒ‰é’®
+	            // 鎶ュ悕鍏抽棴鎸夐挳
 	        overlayCancel = overlayCon.find('.cancel');
 			$(document).on('click', '.sign-info', function () {
 
@@ -27479,32 +27479,32 @@ console.log('test...');
 				{
 					key: 0,
 					link: 'http://m.'+ hostName +'.cn/',
-					text: 'æ–°æˆ¿'
+					text: '鏂版埧'
 				},
 				{
 					key: 1,
 					link: '/myfocus',
-					text: 'æˆ‘çš„ç„¦ç‚¹'
+					text: '鎴戠殑鐒︾偣'
 				},
 				{
 					key: 2,
 					link: 'javascript:;',
-					text: 'æˆ‘çš„çœ‹æˆ¿è®°å½•'
+					text: '鎴戠殑鐪嬫埧璁板綍'
 				}
 			];
 
 			return (
 				React.createElement("div", {style: {'display': this.state.show == true ? 'block' : 'none'}}, 
-		        	React.createElement(UCHeader, {data: {title: 'æˆ‘çš„çœ‹æˆ¿è®°å½•'}}), 
+		        	React.createElement(UCHeader, {data: {title: '鎴戠殑鐪嬫埧璁板綍'}}), 
 					React.createElement("div", {className: "my-notes"}, 
 						React.createElement(NotesBar, {refs: this.state.showTab, triggerChangeTab: this.handleChangeTab}), 
 						React.createElement(NotesList, {refs: this.state.showTab})
 					), 
 					React.createElement("div", {className: "kft-overlay"}, 
 					    React.createElement("div", {className: "other-purpose-content"}, 
-					        React.createElement("p", {className: "other-purpose-title"}, "æŠ¥åä¿¡æ¯"), 
+					        React.createElement("p", {className: "other-purpose-title"}, "鎶ュ悕淇℃伅"), 
 					        React.createElement("div", {className: "other-purpose-info"}, 
-					            React.createElement("p", {className: "other-purpose-text-tip"}), React.createElement("a", {className: "other-purpose-confirm", href: "javascript:;"}, "ç¡®å®š")
+					            React.createElement("p", {className: "other-purpose-text-tip"}), React.createElement("a", {className: "other-purpose-confirm", href: "javascript:;"}, "纭畾")
 					        ), 
 					        React.createElement("a", {className: "cancel", href: "javascript:;"})
 					    )
@@ -27536,7 +27536,7 @@ console.log('test...');
 							React.createElement("span", {className: "loading-icon-1"}), 
 							React.createElement("span", {className: "loading-icon-2"})
 						), 
-						React.createElement("p", null, "æ‹¼å‘½åŠ è½½ä¸­...")
+						React.createElement("p", null, "鎷煎懡鍔犺浇涓�...")
 					)
 				)
 			);
@@ -27564,33 +27564,33 @@ console.log('test...');
 			return (
 				React.createElement("div", {className: "pwd-change-form"}, 
 					React.createElement("div", {className: "input-container"}, 
-						React.createElement("span", {className: "item-label"}, "æ—§å¯†ç ï¼š"), 
+						React.createElement("span", {className: "item-label"}, "鏃у瘑鐮侊細"), 
 						React.createElement("div", {className: "input-box"}, 
-							React.createElement("input", {type: "text", placeholder: "è¯·è¾“å…¥æ—§å¯†ç "})
+							React.createElement("input", {type: "text", placeholder: "璇疯緭鍏ユ棫瀵嗙爜"})
 						)
 					), 
 					React.createElement("div", {className: "input-container"}, 
-						React.createElement("span", {className: "item-label"}, "æ–°å¯†ç ï¼š"), 
+						React.createElement("span", {className: "item-label"}, "鏂板瘑鐮侊細"), 
 						React.createElement("div", {className: "input-box"}, 
-							React.createElement("input", {type: "text", placeholder: "6-16ä½å­—æ¯(åŒºåˆ†å¤§å°å†™)æ•°å­—æˆ–å­—ç¬¦", maxLength: "16"})
+							React.createElement("input", {type: "text", placeholder: "6-16浣嶅瓧姣�(鍖哄垎澶у皬鍐�)鏁板瓧鎴栧瓧绗�", maxLength: "16"})
 						)
 					), 
 					React.createElement("div", {className: "input-container"}, 
-						React.createElement("span", {className: "item-label"}, "ç¡®è®¤æ–°å¯†ç ï¼š"), 
+						React.createElement("span", {className: "item-label"}, "纭鏂板瘑鐮侊細"), 
 						React.createElement("div", {className: "input-box"}, 
-							React.createElement("input", {type: "text", placeholder: "è¯·å†æ¬¡è¾“å…¥æ–°å¯†ç ", maxLength: "16"})
+							React.createElement("input", {type: "text", placeholder: "璇峰啀娆¤緭鍏ユ柊瀵嗙爜", maxLength: "16"})
 						)
 					), 
 					React.createElement("div", {className: "input-container"}, 
-						React.createElement("span", {className: "item-label"}, "å›¾ç‰‡éªŒè¯ç ï¼š"), 
+						React.createElement("span", {className: "item-label"}, "鍥剧墖楠岃瘉鐮侊細"), 
 						React.createElement("div", {className: "input-box"}, 
-							React.createElement("input", {type: "text", placeholder: "è¯·è¾“å…¥éªŒè¯ç "})
+							React.createElement("input", {type: "text", placeholder: "璇疯緭鍏ラ獙璇佺爜"})
 						), 
 						React.createElement("div", {className: "img-box"}, 
 							React.createElement("img", {src: ""})
 						)
 					), 
-					React.createElement("div", {className: "submit-btn disabled"}, "ä¿å­˜")
+					React.createElement("div", {className: "submit-btn disabled"}, "淇濆瓨")
 				)
 			);
 		}
@@ -27671,14 +27671,14 @@ console.log('test...');
 						            	var i = 60,
 						            		codeBtn = $('.get-code-btn');
 
-						            	codeBtn.html(i + 'ç§’åŽé‡å‘');
+						            	codeBtn.html(i + '绉掑悗閲嶅彂');
 
 						            	var timer = window.setInterval(function(){
 						            		i--;
-						            		codeBtn.html(i + 'ç§’åŽé‡å‘');
+						            		codeBtn.html(i + '绉掑悗閲嶅彂');
 						            		if(i <= 0){
 						            			window.clearInterval(timer);
-						            			codeBtn.html('èŽ·å–éªŒè¯ç ');
+						            			codeBtn.html('鑾峰彇楠岃瘉鐮�');
 						            			var newState = Tools.clone(That.state);
 													newState.sendFlag = true;
 													That.setState(newState);
@@ -27702,7 +27702,7 @@ console.log('test...');
 						        },
 						        complete: function(xml, status){
 						            if(status == 'timeout'){
-						                alert('æœåŠ¡å™¨è¶…æ—¶ï¼Œè¯·åˆ·æ–°åŽé‡æ–°å‘é€');
+						                alert('鏈嶅姟鍣ㄨ秴鏃讹紝璇峰埛鏂板悗閲嶆柊鍙戦€�');
 						                var newState = Tools.clone(That.state);
 											newState.sendFlag = true;
 											That.setState(newState);
@@ -27728,14 +27728,14 @@ console.log('test...');
 			}else{
 				$('input:focus').blur();
 				setTimeout(function(){
-					alert('è¯·è¾“å…¥æ­£ç¡®çš„æ‰‹æœºå·ç ');
+					alert('璇疯緭鍏ユ纭殑鎵嬫満鍙风爜');
 				}, 100);
 				return false;
 			}
 		},
 		checkImg: function(){
 			if(this.state.img == ''){
-				alert('è¯·è¾“å…¥å›¾ç‰‡éªŒè¯ç ');
+				alert('璇疯緭鍏ュ浘鐗囬獙璇佺爜');
 				return false;
 			}else{
 				return true;
@@ -27746,7 +27746,7 @@ console.log('test...');
 			if(this.state.code != ''){
 				return true;
 			}else{
-				alert('è¯·è¾“å…¥çŸ­ä¿¡éªŒè¯ç ');
+				alert('璇疯緭鍏ョ煭淇￠獙璇佺爜');
 				return false;
 			}
 		},
@@ -27764,7 +27764,7 @@ console.log('test...');
 			        timeout: 5000,
 			        success: function(res){
 			            if(res.errorCode === 0){
-			            	alert('ç»‘å®šæˆåŠŸ');
+			            	alert('缁戝畾鎴愬姛');
 			            	document.location.href = '/myfocus#/';
 			            }else{
 			                alert(res.errorMessage);
@@ -27776,7 +27776,7 @@ console.log('test...');
 			        },
 			        complete: function(xml, status){
 			            if(status == 'timeout'){
-			                alert('æœåŠ¡å™¨è¶…æ—¶ï¼Œè¯·åˆ·æ–°åŽé‡æ–°å‘é€');
+			                alert('鏈嶅姟鍣ㄨ秴鏃讹紝璇峰埛鏂板悗閲嶆柊鍙戦€�');
 			            }
 			        }
 			    });
@@ -27787,46 +27787,46 @@ console.log('test...');
 				{
 					key: 0,
 					link: 'http://m.focus.cn/',
-					text: 'æ–°æˆ¿'
+					text: '鏂版埧'
 				},
 				{
 					key: 1,
 					link: '/myfocus',
-					text: 'æˆ‘çš„ç„¦ç‚¹'
+					text: '鎴戠殑鐒︾偣'
 				},
 				{
 					key: 2,
 					link: '/info',
-					text: 'æˆ‘çš„è´¦æˆ·'
+					text: '鎴戠殑璐︽埛'
 				},
 				{
 					key: 3,
 					link: 'javascript:;',
-					text: 'ä¿®æ”¹æ‰‹æœºå·'
+					text: '淇敼鎵嬫満鍙�'
 				}
 			];
 			return (
 				React.createElement("div", null, 
-		        	React.createElement(UCHeader, {data: {title: 'ä¿®æ”¹æ‰‹æœºå·'}}), 
+		        	React.createElement(UCHeader, {data: {title: '淇敼鎵嬫満鍙�'}}), 
 					React.createElement("div", {className: "mobile-change-box"}, 
 						React.createElement("div", {className: "mobile-inner-box"}, 
 							React.createElement("div", {className: "mobile-input"}, 
-								React.createElement("span", {className: "input-label"}, "æ‰‹æœºå·ï¼š"), 
-								React.createElement("input", {type: "tel", placeholder: "è¯·è¾“å…¥æ‰‹æœºå·", maxLength: "11", value: this.state.mobile, onChange: this.handleMobileChange})
+								React.createElement("span", {className: "input-label"}, "鎵嬫満鍙凤細"), 
+								React.createElement("input", {type: "tel", placeholder: "璇疯緭鍏ユ墜鏈哄彿", maxLength: "11", value: this.state.mobile, onChange: this.handleMobileChange})
 							), 
 							React.createElement("div", {className: "mobile-input"}, 
-								React.createElement("span", {className: "input-label"}, "å›¾ç‰‡éªŒè¯ç ï¼š"), 
-								React.createElement("input", {type: "text", placeholder: "è¯·è¾“å…¥å›¾ç‰‡éªŒè¯ç ", maxLength: "6", value: this.state.img, onChange: this.handleImgChange}), 
+								React.createElement("span", {className: "input-label"}, "鍥剧墖楠岃瘉鐮侊細"), 
+								React.createElement("input", {type: "text", placeholder: "璇疯緭鍏ュ浘鐗囬獙璇佺爜", maxLength: "6", value: this.state.img, onChange: this.handleImgChange}), 
 								React.createElement("img", {src: this.state.imgcode, onClick: this.changeImg})
 							), 
 							React.createElement("div", {className: "mobile-input"}, 
-								React.createElement("span", {className: "input-label"}, "éªŒè¯ç ï¼š"), 
-								React.createElement("input", {type: "tel", placeholder: "è¯·è¾“å…¥éªŒè¯ç ", maxLength: "6", value: this.state.code, onChange: this.handleCodeChange}), 
-								React.createElement("span", {className: "get-code-btn", onClick: this.handleGetCode}, "èŽ·å–éªŒè¯ç ")
+								React.createElement("span", {className: "input-label"}, "楠岃瘉鐮侊細"), 
+								React.createElement("input", {type: "tel", placeholder: "璇疯緭鍏ラ獙璇佺爜", maxLength: "6", value: this.state.code, onChange: this.handleCodeChange}), 
+								React.createElement("span", {className: "get-code-btn", onClick: this.handleGetCode}, "鑾峰彇楠岃瘉鐮�")
 			 				)
 		 				), 
 						React.createElement("div", {className: "submit-btn-box"}, 
-							React.createElement("div", {className: "submit-btn", onClick: this.handleBindMobile}, "ä¿å­˜")
+							React.createElement("div", {className: "submit-btn", onClick: this.handleBindMobile}, "淇濆瓨")
 						)
 					), 
 					React.createElement(UCBreadCrumb, {data: brData}), 
@@ -27914,7 +27914,7 @@ console.log('test...');
 					
 				}else{
 					$('input:focus').blur();
-					alert('æ‚¨è¾“å…¥çš„æ˜µç§°ä¸ç¬¦åˆè§„èŒƒï¼Œè¯·é‡æ–°è¾“å…¥');
+					alert('鎮ㄨ緭鍏ョ殑鏄电О涓嶇鍚堣鑼冿紝璇烽噸鏂拌緭鍏�');
 				}
 
 
@@ -27925,33 +27925,33 @@ console.log('test...');
 				{
 					key: 0,
 					link: 'http://m.focus.cn/',
-					text: 'æ–°æˆ¿'
+					text: '鏂版埧'
 				},
 				{
 					key: 1,
 					link: '/myfocus',
-					text: 'æˆ‘çš„ç„¦ç‚¹'
+					text: '鎴戠殑鐒︾偣'
 				},
 				{
 					key: 2,
 					link: '/info',
-					text: 'æˆ‘çš„è´¦æˆ·'
+					text: '鎴戠殑璐︽埛'
 				},
 				{
 					key: 3,
 					link: 'javascript:;',
-					text: 'ä¿®æ”¹æ˜µç§°'
+					text: '淇敼鏄电О'
 				}
 			];
 			return (
 				React.createElement("div", null, 
-		        	React.createElement(UCHeader, {data: {title: 'ä¿®æ”¹æ˜µç§°'}}), 
+		        	React.createElement(UCHeader, {data: {title: '淇敼鏄电О'}}), 
 					React.createElement("div", {className: "nickname-change-box"}, 
 						React.createElement("div", {className: "nickname-input"}, 
-							React.createElement("input", {type: "text", placeholder: "4-20ä½å­—ç¬¦ï¼ŒåŒ…å«ä¸­è‹±æ–‡æ•°å­—ã€å­—æ¯åŠä¸‹åˆ’çº¿", maxLength: "20", value: this.state.nickName, onChange: this.handleNickChange})
+							React.createElement("input", {type: "text", placeholder: "4-20浣嶅瓧绗︼紝鍖呭惈涓嫳鏂囨暟瀛椼€佸瓧姣嶅強涓嬪垝绾�", maxLength: "20", value: this.state.nickName, onChange: this.handleNickChange})
 						), 
 						React.createElement("div", {className: "submit-btn-box"}, 
-							React.createElement("div", {className: "submit-btn", onClick: this.handleSaveNick}, "ä¿å­˜")
+							React.createElement("div", {className: "submit-btn", onClick: this.handleSaveNick}, "淇濆瓨")
 						)
 					), 
 		        	React.createElement(UCBreadCrumb, {data: brData}), 
@@ -28035,7 +28035,7 @@ console.log('test...');
 			var That = this;
 
 			if(this.state.img == ''){
-				alert('è¯·è¾“å…¥å›¾ç‰‡éªŒè¯ç ');
+				alert('璇疯緭鍏ュ浘鐗囬獙璇佺爜');
 				return;
 			}
 
@@ -28061,14 +28061,14 @@ console.log('test...');
 					            	var i = 60,
 					            		codeBtn = $('.get-code-btn');
 
-					            	codeBtn.html(i + 'ç§’åŽé‡å‘');
+					            	codeBtn.html(i + '绉掑悗閲嶅彂');
 
 					            	var timer = window.setInterval(function(){
 					            		i--;
-					            		codeBtn.html(i + 'ç§’åŽé‡å‘');
+					            		codeBtn.html(i + '绉掑悗閲嶅彂');
 					            		if(i <= 0){
 					            			window.clearInterval(timer);
-					            			codeBtn.html('èŽ·å–éªŒè¯ç ');
+					            			codeBtn.html('鑾峰彇楠岃瘉鐮�');
 					            			var newState = Tools.clone(That.state);
 												newState.sendFlag = true;
 												That.setState(newState);
@@ -28094,7 +28094,7 @@ console.log('test...');
 					        },
 					        complete: function(xml, status){
 					            if(status == 'timeout'){
-					                alert('æœåŠ¡å™¨è¶…æ—¶ï¼Œè¯·åˆ·æ–°åŽé‡æ–°å‘é€');
+					                alert('鏈嶅姟鍣ㄨ秴鏃讹紝璇峰埛鏂板悗閲嶆柊鍙戦€�');
 					                var newState = Tools.clone(That.state);
 										newState.sendFlag = true;
 										That.setState(newState);
@@ -28137,7 +28137,7 @@ console.log('test...');
 			        },
 			        complete: function(xml, status){
 			            if(status == 'timeout'){
-			                alert('æœåŠ¡å™¨è¶…æ—¶ï¼Œè¯·åˆ·æ–°åŽé‡æ–°å‘é€');
+			                alert('鏈嶅姟鍣ㄨ秴鏃讹紝璇峰埛鏂板悗閲嶆柊鍙戦€�');
 			            }
 			        }
 			    });
@@ -28148,41 +28148,41 @@ console.log('test...');
 				{
 					key: 0,
 					link: 'http://m.focus.cn/',
-					text: 'æ–°æˆ¿'
+					text: '鏂版埧'
 				},
 				{
 					key: 1,
 					link: '/myfocus',
-					text: 'æˆ‘çš„ç„¦ç‚¹'
+					text: '鎴戠殑鐒︾偣'
 				},
 				{
 					key: 2,
 					link: '/info',
-					text: 'æˆ‘çš„è´¦æˆ·'
+					text: '鎴戠殑璐︽埛'
 				},
 				{
 					key: 3,
 					link: 'javascript:;',
-					text: 'ä¿®æ”¹æ‰‹æœºå·'
+					text: '淇敼鎵嬫満鍙�'
 				}
 			];
 			return (
 				React.createElement("div", null, 
-		        	React.createElement(UCHeader, {data: {title: 'ä¿®æ”¹æ‰‹æœºå·'}}), 
+		        	React.createElement(UCHeader, {data: {title: '淇敼鎵嬫満鍙�'}}), 
 					React.createElement("div", {className: "mobile-change-box"}, 
-						React.createElement("div", {className: "origin-mobile"}, "åŽŸæ‰‹æœºå·ä¸ºï¼š", this.state.showMobile), 
+						React.createElement("div", {className: "origin-mobile"}, "鍘熸墜鏈哄彿涓猴細", this.state.showMobile), 
 						React.createElement("div", {className: "mobile-input"}, 
-							React.createElement("span", {className: "input-label"}, "å›¾ç‰‡éªŒè¯ç ï¼š"), 
-							React.createElement("input", {type: "text", placeholder: "è¯·è¾“å…¥å›¾ç‰‡éªŒè¯ç ", maxLength: "6", value: this.state.img, onChange: this.handleImgChange}), 
+							React.createElement("span", {className: "input-label"}, "鍥剧墖楠岃瘉鐮侊細"), 
+							React.createElement("input", {type: "text", placeholder: "璇疯緭鍏ュ浘鐗囬獙璇佺爜", maxLength: "6", value: this.state.img, onChange: this.handleImgChange}), 
 							React.createElement("img", {src: this.state.imgcode, onClick: this.changeImg})
 						), 
 						React.createElement("div", {className: "mobile-input"}, 
-							React.createElement("span", {className: "input-label"}, "éªŒè¯ç ï¼š"), 
-							React.createElement("input", {type: "tel", placeholder: "è¯·è¾“å…¥éªŒè¯ç ", maxLength: "6", value: this.state.code, onChange: this.handleCodeChange}), 
-							React.createElement("span", {className: "get-code-btn", onClick: this.handleGetCode}, "èŽ·å–éªŒè¯ç ")
+							React.createElement("span", {className: "input-label"}, "楠岃瘉鐮侊細"), 
+							React.createElement("input", {type: "tel", placeholder: "璇疯緭鍏ラ獙璇佺爜", maxLength: "6", value: this.state.code, onChange: this.handleCodeChange}), 
+							React.createElement("span", {className: "get-code-btn", onClick: this.handleGetCode}, "鑾峰彇楠岃瘉鐮�")
 						), 
 						React.createElement("div", {className: "submit-btn-box"}, 
-							React.createElement("div", {className: "submit-btn", onClick: this.handleUnbindMobile}, "ä¸‹ä¸€æ­¥")
+							React.createElement("div", {className: "submit-btn", onClick: this.handleUnbindMobile}, "涓嬩竴姝�")
 						)
 					), 
 					React.createElement(UCBreadCrumb, {data: brData}), 
@@ -28245,46 +28245,46 @@ console.log('test...');
 				{
 					key: 0,
 					link: 'http://m.'+hostName+'.cn/',
-					text: 'æ–°æˆ¿'
+					text: '鏂版埧'
 				},
 				{
 					key: 1,
 					link: '/myfocus',
-					text: 'æˆ‘çš„ç„¦ç‚¹'
+					text: '鎴戠殑鐒︾偣'
 				},
 				{
 					key: 2,
 					link: 'javascript:;',
-					text: 'æˆ‘çš„è®¢å•'
+					text: '鎴戠殑璁㈠崟'
 				}
 			];
 
 			return (
 				React.createElement("div", null, 
-		        	React.createElement(UCHeader, {data: {title: 'æˆ‘çš„è®¢å•'}}), 
+		        	React.createElement(UCHeader, {data: {title: '鎴戠殑璁㈠崟'}}), 
 					React.createElement("div", {className: "uc-order-box"}, 
 						React.createElement("div", {className: "order-list"}, 
 							React.createElement("a", {href: "http://m.egou."+hostName+".cn/pay/order-list", className: "order-list-item clearfix"}, 
 								React.createElement("span", {className: "youhui-order-icon"}), 
-								React.createElement("span", {className: "item-label"}, "æ¥¼ç›˜ä¼˜æƒ è®¢å•"), 
+								React.createElement("span", {className: "item-label"}, "妤肩洏浼樻儬璁㈠崟"), 
 								React.createElement("span", {className: "item-count"}, this.state.res.data.ajkOrderAmount == 0 ? '' : this.state.res.data.ajkOrderAmount), 
 								React.createElement("span", {className: "arrow-right"})
 							), 
 							React.createElement("a", {href: "http://m."+hostName+".cn/user/goufangjie/tuangou/", className: "order-list-item clearfix"}, 
 								React.createElement("span", {className: "tuangou-order-icon"}), 
-								React.createElement("span", {className: "item-label"}, "é˜¶æ¢¯å›¢è´­è®¢å•"), 
+								React.createElement("span", {className: "item-label"}, "闃舵鍥㈣喘璁㈠崟"), 
 								React.createElement("span", {className: "item-count"}, this.state.res.data.jttgOrderAmount == 0 ? '' : this.state.res.data.jttgOrderAmount), 
 								React.createElement("span", {className: "arrow-right"})
 							), 
 							React.createElement("a", {href: yxhd_domain + 'userCenter/yyzgList', className: "order-list-item clearfix"}, 
 								React.createElement("span", {className: "yyzg-order-icon"}), 
-								React.createElement("span", {className: "item-label"}, "ä¸€å…ƒæŠ˜è´­è®¢å•"), 
+								React.createElement("span", {className: "item-label"}, "涓€鍏冩姌璐鍗�"), 
 								React.createElement("span", {className: "item-count"}, this.state.res.data.yyzkOrderAmount == 0 ? '' : this.state.res.data.yyzkOrderAmount), 
 								React.createElement("span", {className: "arrow-right"})
 							), 
 							React.createElement("a", {href: yxhd_domain + 'userCenter/yxhfList', className: "order-list-item clearfix", style: {display:'block'}}, 
 								React.createElement("span", {className: "yxhf-order-icon"}), 
-								React.createElement("span", {className: "item-label"}, "ä¼˜é€‰å¥½æˆ¿è®¢å•"), 
+								React.createElement("span", {className: "item-label"}, "浼橀€夊ソ鎴胯鍗�"), 
 								React.createElement("span", {className: "item-count"}, this.state.res.data.yxhfOrderAmount == 0 ? '' : this.state.res.data.yxhfOrderAmount), 
 								React.createElement("span", {className: "arrow-right"})
 							)
@@ -28344,17 +28344,17 @@ console.log('test...');
 				{
 					key: 0,
 					link: 'http://m.focus.cn/',
-					text: 'æ–°æˆ¿'
+					text: '鏂版埧'
 				},
 				{
 					key: 1,
 					link: '/myfocus',
-					text: 'æˆ‘çš„ç„¦ç‚¹'
+					text: '鎴戠殑鐒︾偣'
 				},
 				{
 					key: 2,
 					link: 'javascript:;',
-					text: 'æˆ‘çš„é‡‘èž'
+					text: '鎴戠殑閲戣瀺'
 				}
 			];
 
@@ -28362,18 +28362,18 @@ console.log('test...');
 
 			return (
 				React.createElement("div", null, 
-		        	React.createElement(UCHeader, {data: {title: 'æˆ‘çš„é‡‘èž'}}), 
+		        	React.createElement(UCHeader, {data: {title: '鎴戠殑閲戣瀺'}}), 
 					React.createElement("div", {className: "uc-order-box", style: {minHeight: h}}, 
 						React.createElement("div", {className: "order-list"}, 
 							React.createElement("a", {href: "http://m.focus.cn/ibank/myProjPage/", className: "order-list-item clearfix"}, 
 								React.createElement("span", {className: "goufangbao-order-icon"}), 
-								React.createElement("span", {className: "item-label"}, "è´­æˆ¿å®è®¢å•"), 
+								React.createElement("span", {className: "item-label"}, "璐埧瀹濊鍗�"), 
 								React.createElement("span", {className: "item-count"}, this.state.res.data.gfbOrderAmount == 0 ? '' : this.state.res.data.gfbOrderAmount), 
 								React.createElement("span", {className: "arrow-right"})
 							), 
 							React.createElement("a", {href: "http://m.focus.cn/user/zhongchou/", className: "order-list-item clearfix"}, 
 								React.createElement("span", {className: "zhongchoubao-order-icon"}), 
-								React.createElement("span", {className: "item-label"}, "ä¼—ç­¹å®è®¢å•"), 
+								React.createElement("span", {className: "item-label"}, "浼楃瀹濊鍗�"), 
 								React.createElement("span", {className: "item-count"}, this.state.res.data.zcbOrderAmount == 0 ? '' : this.state.res.data.zcbOrderAmount), 
 								React.createElement("span", {className: "arrow-right"})
 							)
@@ -28451,7 +28451,7 @@ console.log('test...');
 						}else if(res.errorCode === -1){
 							var newState = Tools.clone(That.state);
 								newState.isLogin = false;
-								newState.res.data.user.nickName = 'ç‚¹å‡»ä»¥ç™»å½•';
+								newState.res.data.user.nickName = '鐐瑰嚮浠ョ櫥褰�';
 								That.setState(newState);
 						}
 					}
@@ -28463,17 +28463,17 @@ console.log('test...');
 				{
 					key: 0,
 					link: 'http://m.focus.cn/',
-					text: 'æ–°æˆ¿'
+					text: '鏂版埧'
 				},
 				{
 					key: 1,
 					link: 'javascript:;',
-					text: 'æˆ‘çš„ç„¦ç‚¹'
+					text: '鎴戠殑鐒︾偣'
 				}
 			];
 			return (
 				React.createElement("div", null, 
-		        	React.createElement(UCHeader, {data: {title: 'æˆ‘çš„ç„¦ç‚¹'}}), 
+		        	React.createElement(UCHeader, {data: {title: '鎴戠殑鐒︾偣'}}), 
 					React.createElement(UCTop, {data: this.state.res, refs: this.state.isLogin}), 
 					React.createElement(UCList, {data: this.state.res, refs: this.state.isLogin}), 
 		        	React.createElement(UCBreadCrumb, {data: brData}), 
@@ -28533,16 +28533,16 @@ console.log('test...');
 			return (
 				React.createElement("div", {className: "usercenter-count"}, 
 					React.createElement("a", {className: "user-money", href: Tools.isLogin == false ? 'http://login.'+hostName+'.cn/login?ru=http://m.'+hostName+'.cn/ibank/myAssetsPage' : 'http://m.'+hostName+'.cn/ibank/myAssetsPage'}, 
-						React.createElement("p", {className: "count"}, this.props.data.data.walletAmount == 0 ? '0.0å…ƒ' : this.props.data.data.walletAmount), 
-						React.createElement("p", {className: "title"}, "æˆ‘çš„é’±åŒ…")
+						React.createElement("p", {className: "count"}, this.props.data.data.walletAmount == 0 ? '0.0鍏�' : this.props.data.data.walletAmount), 
+						React.createElement("p", {className: "title"}, "鎴戠殑閽卞寘")
 					), 
 					React.createElement("a", {className: "user-packet", href: Tools.isLogin == false ? 'http://login.'+hostName+'.cn/login?ru=http://m.'+hostName+'.cn/user/myRedPacket/' : 'http://m.'+hostName+'.cn/user/myRedPacket/'}, 
 						React.createElement("p", {className: "count"}, this.props.data.data.redEnvNum), 
-						React.createElement("p", {className: "title"}, "çº¢åŒ…")
+						React.createElement("p", {className: "title"}, "绾㈠寘")
 					), 
 					React.createElement("a", {className: "user-ticket", href: Tools.isLogin == false ? 'http://login.'+hostName+'.cn/login?ru=http://m.'+hostName+'.cn/user/myticket/' : 'http://m.'+hostName+'.cn/user/myticket/'}, 
 						React.createElement("p", {className: "count"}, this.props.data.data.couponNum), 
-						React.createElement("p", {className: "title"}, "ä¼˜æƒ åˆ¸")
+						React.createElement("p", {className: "title"}, "浼樻儬鍒�")
 					)
 				)
 			);
@@ -28602,19 +28602,19 @@ console.log('test...');
 						React.createElement("div", {className: "item-box"}, 
 							React.createElement(Link, {to: "/order", className: "list-item clearfix"}, 
 								React.createElement("span", {className: "item-icon dingdan-icon"}), 
-								React.createElement("span", {className: "item-title"}, "æˆ‘çš„è®¢å•"), 
+								React.createElement("span", {className: "item-title"}, "鎴戠殑璁㈠崟"), 
 								React.createElement("span", {className: "item-arrow"}), 
-								React.createElement("span", {className: "item-tips"}, "ä¼˜æƒ æ¥¼ç›˜ã€é˜¶æ¢¯å›¢è´­")
+								React.createElement("span", {className: "item-tips"}, "浼樻儬妤肩洏銆侀樁姊洟璐�")
 							), 
 							React.createElement("a", {className: "list-item clearfix", href: isLogin == false ? "http://login."+hostName+".cn/login?ru=http://m."+hostName+".cn/user/tuangou/": "http://m."+hostName+".cn/user/tuangou/"}, 
 								React.createElement("span", {className: "item-icon youhui-icon"}), 
-								React.createElement("span", {className: "item-title"}, "æˆ‘çš„ä¼˜æƒ "), 
+								React.createElement("span", {className: "item-title"}, "鎴戠殑浼樻儬"), 
 								React.createElement("span", {className: "item-arrow"}), 
 								React.createElement("span", {className: "item-tips"}, this.props.data.data.offerCount == 0 ? '' : this.props.data.data.offerCount)
 							), 
 							React.createElement("a", {className: "list-item clearfix", href: "http://m."+hostName+".cn/user/zixun/"}, 
 								React.createElement("span", {className: "item-icon zixun-icon"}), 
-								React.createElement("span", {className: "item-title"}, "æˆ‘çš„å’¨è¯¢"), 
+								React.createElement("span", {className: "item-title"}, "鎴戠殑鍜ㄨ"), 
 								React.createElement("span", {className: "item-arrow"}), 
 								React.createElement("span", {className: "item-tips"})
 							)
@@ -28624,15 +28624,15 @@ console.log('test...');
 						React.createElement("div", {className: "item-box"}, 
 							React.createElement(Link, {to: "/notes", className: "list-item clearfix"}, 
 								React.createElement("span", {className: "item-icon kanfang-icon"}), 
-								React.createElement("span", {className: "item-title"}, "æˆ‘çš„çœ‹æˆ¿è®°å½•"), 
+								React.createElement("span", {className: "item-title"}, "鎴戠殑鐪嬫埧璁板綍"), 
 								React.createElement("span", {className: "item-arrow"}), 
-								React.createElement("span", {className: "item-tips"}, "çœ‹æˆ¿å›¢ã€æ—¥ç¨‹ã€çœ‹æˆ¿ç¬”è®°")
+								React.createElement("span", {className: "item-tips"}, "鐪嬫埧鍥€佹棩绋嬨€佺湅鎴跨瑪璁�")
 							), 
 							React.createElement(Link, {to: "/manage", className: "list-item clearfix"}, 
 								React.createElement("span", {className: "item-icon fangyuan-icon"}), 
-								React.createElement("span", {className: "item-title"}, "æˆ‘çš„æˆ¿æºç®¡ç†"), 
+								React.createElement("span", {className: "item-title"}, "鎴戠殑鎴挎簮绠＄悊"), 
 								React.createElement("span", {className: "item-arrow"}), 
-								React.createElement("span", {className: "item-tips"}, "æ–°æˆ¿ã€äºŒæ‰‹æˆ¿")
+								React.createElement("span", {className: "item-tips"}, "鏂版埧銆佷簩鎵嬫埧")
 							)
 						)
 					), 
@@ -28640,19 +28640,19 @@ console.log('test...');
 						React.createElement("div", {className: "item-box"}, 
 							React.createElement(Link, {to: "/attention", className: "list-item clearfix"}, 
 								React.createElement("span", {className: "item-icon guanzhu-icon"}), 
-								React.createElement("span", {className: "item-title"}, "æˆ‘çš„å…³æ³¨"), 
+								React.createElement("span", {className: "item-title"}, "鎴戠殑鍏虫敞"), 
 								React.createElement("span", {className: "item-arrow"}), 
-								React.createElement("span", {className: "item-tips"}, "æ–°æˆ¿ã€äºŒæ‰‹æˆ¿ã€æˆ·åž‹ã€çœ‹æˆ¿å›¢")
+								React.createElement("span", {className: "item-tips"}, "鏂版埧銆佷簩鎵嬫埧銆佹埛鍨嬨€佺湅鎴垮洟")
 							), 
 							React.createElement("a", {href: "http://m."+hostName+".cn/user/dingyue/", className: "list-item clearfix"}, 
 								React.createElement("span", {className: "item-icon dingyue-icon"}), 
-								React.createElement("span", {className: "item-title"}, "æˆ‘çš„è®¢é˜…"), 
+								React.createElement("span", {className: "item-title"}, "鎴戠殑璁㈤槄"), 
 								React.createElement("span", {className: "item-arrow"}), 
-								React.createElement("span", {className: "item-tips"}, "æ–°æˆ¿ã€äºŒæ‰‹æˆ¿")
+								React.createElement("span", {className: "item-tips"}, "鏂版埧銆佷簩鎵嬫埧")
 							), 
 							React.createElement("a", {className: "list-item clearfix", href: "http://m."+hostName+".cn/user/dianping/"}, 
 								React.createElement("span", {className: "item-icon dianping-icon"}), 
-								React.createElement("span", {className: "item-title"}, "æˆ‘çš„ç‚¹è¯„"), 
+								React.createElement("span", {className: "item-title"}, "鎴戠殑鐐硅瘎"), 
 								React.createElement("span", {className: "item-arrow"}), 
 								React.createElement("span", {className: "item-tips"}, this.props.data.data.commentCount == 0 ? '' : this.props.data.data.commentCount)
 							)
@@ -28662,7 +28662,7 @@ console.log('test...');
 						React.createElement("div", {className: "item-box"}, 
 							React.createElement("a", {className: "list-item clearfix", href: ""}, 
 								React.createElement("span", {className: "item-icon xiaoxi-icon"}), 
-								React.createElement("span", {className: "item-title"}, "æˆ‘çš„æ¶ˆæ¯"), 
+								React.createElement("span", {className: "item-title"}, "鎴戠殑娑堟伅"), 
 								React.createElement("span", {className: "item-arrow"}), 
 								React.createElement("span", {className: "item-tips"}, this.props.data.data.unreadAmount == 0 ? '' : this.props.data.data.unreadAmount)
 							)

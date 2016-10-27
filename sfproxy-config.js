@@ -16,7 +16,7 @@ module.exports = [{
 	}
 }, 
  {
- 	url: "/app.bundle_8aac11420240704531bce97d876cfb2d.js",
+ 	url: /app.bundle\.*.js/,
  	res: './test.js'
  }, 
 //{
