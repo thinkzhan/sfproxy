@@ -17,7 +17,7 @@ sfproxy -l [file] -p [port] -t [timeout]
 require('sfproxy').run({
 	list: 'sfproxy-config.js', // 相对于process.cwd
 	port: 3037,
-	timeout: 1000
+	timeout: 5000
 });
 ```
 
@@ -33,18 +33,21 @@ require('sfproxy').run({
 ## 代理配置文件格式
 ```
 module.exports = [{
-		url: "/user", //代理请求，返回json数据
+		url: "/test", //代理请求，返回json数据
 		res: {
 			errorMessage: "success",
 			"data": {
 			}
 		}
 	}, {
-	 	url: "http://www/test.js", //代理线上文件，返回本地相对路径文件
+	 	url: "http://test.js", //代理线上文件，返回本地相对路径文件
 	 	res: './test.js'
 	}, {
-		url: "http://www/test.js",  //代理线上文件，返回本地绝对路径文件
+		url: "http://test.js",  //代理线上文件，返回本地绝对路径文件
 		res: '/Users/Desktop/test.js'
+	}, {
+		url: "http://test.js",  //代理线上文件，返回普通字符串
+		res: 'test'
 	}
 ]
 ```
