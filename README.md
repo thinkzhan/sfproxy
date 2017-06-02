@@ -1,8 +1,8 @@
-##desc
-   proxy file or request ,only for http
+## desc
+   proxy file or request , http && https
 
-##usage
-####1 全局
+## usage
+#### 1 全局
 `npm install -g sfproxy`
 ```
 sfproxy -l [file] -p [port] -t [timeout]
@@ -10,7 +10,7 @@ sfproxy -l [file] -p [port] -t [timeout]
 
 `浏览器应监听端口`
 
-####2 引用
+#### 2 引用
 `npm install sfproxy`
 
 ```
@@ -22,7 +22,7 @@ require('sfproxy').run({
 ```
 
 `浏览器应监听端口`
-##args
+## args
 
 `-l --list: 代理配置文件路径，相对(相对于命令执行路径)或绝对路径`
 
@@ -54,6 +54,3 @@ module.exports = [{
 	}
 ]
 ```
-
-
-

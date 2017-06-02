@@ -1,15 +1,17 @@
 {
   "name": "sfproxy",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "bin": {
     "sfproxy": "./bin/www"
   },
-  "description": "proxy file or request ,only for http currently",
+  "description": "proxy file or request ",
   "scripts": {
     "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "liberalist",
+  "author": {
+    "name": "liberalist"
+  },
   "license": "MIT",
   "dependencies": {
     "commander": "^2.9.0",
@@ -25,7 +27,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/liberalist1991/sfproxy.git",
+    "url": "git+https://github.com/liberalist1991/sfproxy.git",
     "web": "https://github.com/liberalist1991/sfproxy"
-  }
+  },
+  "devDependencies": {
+    "https": "^1.0.0",
+    "net": "^1.0.2"
+  },
+  "readme": "## desc\n   proxy file or request , http && https\n\n## usage\n#### 1 全局\n`npm install -g sfproxy`\n```\nsfproxy -l [file] -p [port] -t [timeout]\n```\n\n`浏览器应监听端口`\n\n#### 2 引用\n`npm install sfproxy`\n\n```\nrequire('sfproxy').run({\n\tlist: 'sfproxy-config.js', // 相对于process.cwd\n\tport: 3037,\n\ttimeout: 1000\n});\n```\n\n`浏览器应监听端口`\n## args\n\n`-l --list: 代理配置文件路径，相对(相对于命令执行路径)或绝对路径`\n\n`-p --port: 代理服务器端口，默认3037`\n\n`－t --timeout: 请求响应超时时延`\n\n## 代理配置文件格式\n```\nmodule.exports = [{\n\t\turl: \"/user\", //代理请求，返回json数据\n\t\tres: {\n\t\t\terrorMessage: \"success\",\n\t\t\t\"data\": {\n\t\t\t}\n\t\t}\n\t}, {\n\t \turl: \"http://www/test.js\", //代理线上文件，返回本地相对路径文件\n\t \tres: './test.js'\n\t}, {\n\t\turl: \"http://www/test.js\",  //代理线上文件，返回本地绝对路径文件\n\t\tres: '/Users/Desktop/test.js'\n\t}\n]\n```\n",
+  "readmeFilename": "README.md",
+  "gitHead": "5a4274338799c6080c65de2556bac5c5111f50d7",
+  "bugs": {
+    "url": "https://github.com/liberalist1991/sfproxy/issues"
+  },
+  "homepage": "https://github.com/liberalist1991/sfproxy#readme",
+  "_id": "sfproxy@0.0.8",
+  "_shasum": "c0400047a99728ae7fdbf9d631a6f1356825e248",
+  "_from": "sfproxy@*"
 }
